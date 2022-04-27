@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fundamentos - align items</title>
+    <style type="text/css">
+      .container {
+        max-width: 350px;
+        border: 1px solid black;
+        display: flex;
+      }
+
+      .item {
+        background-color: blueviolet;
+        margin: 5px;
+        color: white;
+        text-align: center;
+        flex: 1;
+      }
+
+      .center {
+        align-items: center;
+      }
+
+      .strecth {
+        align-items: stretch;
+      }
+
+      .flex-start {
+        align-items: flex-start;
+      }
+
+      .flex-end {
+        align-items: flex-end;
+      }
+      .baseline {
+        align-items: baseline;
+      }
+
+      .column {
+        flex-direction: column;
+      }
+
+      .central {
+        height: 300px;
+        justify-content: center;
+      }
+
+      .central .item {
+        flex: 0;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>row</h1>
+    <p>center flex (ajusta de acordo com o texto)</p>
+    <section class="container center flex">
+      <div class="item">item 1</div>
+      <div class="item">vida bela para um caralho</div>
+      <div class="item">
+        item 3 algum texto grande qualquer pra aumentar o tamanho
+      </div>
+    </section>
+
+    <p>center strecth (tamano do maior item)</p>
+    <section class="container center strecth">
+      <div class="item">item 1</div>
+      <div class="item">vida bela para um caralho</div>
+      <div class="item">
+        item 3 algum texto grande qualquer pra aumentar o tamanho
+      </div>
+    </section>
+
+    <p>center flex-start(cresce de cima pra baixo</p>
+    <section class="container center flex-start">
+      <div class="item">item 1</div>
+      <div class="item">vida bela para um caralho</div>
+      <div class="item">
+        item 3 algum texto grande qualquer pra aumentar o tamanho
+      </div>
+    </section>
+
+    <p>center flex-end (cresce de baixo pra cima)</p>
+    <section class="container center flex-end">
+      <div class="item">item 1</div>
+      <div class="item">vida bela para um caralho</div>
+      <div class="item">
+        item 3 algum texto grande qualquer pra aumentar o tamanho
+      </div>
+    </section>
+
+    <p>center baseline(respeita a linha de baixo)</p>
+    <section class="container center baseline">
+      <div class="item"><br />item 1</div>
+      <div class="item">vida bela para um caralho</div>
+      <div class="item">
+        item 3 algum texto grande qualquer pra aumentar o tamanho
+      </div>
+    </section>
+
+    <h1>column</h1>
+
+    <p>center flex-start(cresce de cima pra baixo</p>
+    <section class="container center flex-start column">
+      <div class="item">item 1</div>
+      <div class="item">vida bela para um caralho</div>
+      <div class="item">
+        item 3 algum texto grande qualquer pra aumentar o tamanho
+      </div>
+    </section>
+
+    <p>center flex-end (cresce de baixo pra cima)</p>
+    <section class="container center flex-end column">
+      <div class="item">item 1</div>
+      <div class="item">vida bela para um caralho</div>
+      <div class="item">
+        item 3 algum texto grande qualquer pra aumentar o tamanho
+      </div>
+    </section>
+
+    <p>center flex (ajusta de acordo com o texto)</p>
+    <section class="container center flex column">
+      <div class="item">item 1</div>
+      <div class="item">vida bela para um caralho</div>
+      <div class="item">
+        item 3 algum texto grande qualquer pra aumentar o tamanho
+      </div>
+    </section>
+
+    <p>center strecth (tamano do maior item)</p>
+    <section class="container center strecth column">
+      <div class="item">item 1</div>
+      <div class="item">vida bela para um caralho</div>
+      <div class="item">
+        item 3 algum texto grande qualquer pra aumentar o tamanho
+      </div>
+    </section>
+
+    <p>center baseline(respeita a linha de baixo)</p>
+    <section class="container center baseline column">
+      <div class="item"><br />item 1</div>
+      <div class="item">vida bela para um caralho</div>
+      <div class="item">
+        item 3 algum texto grande qualquer pra aumentar o tamanho
+      </div>
+    </section>
+
+    <p>alinhamento central a tela</p>
+    <section class="container central center">
+      <div class="item">
+        item 3 algum texto grande qualquer pra aumentar o tamanho
+      </div>
+    </section>
+  </body>
+</html>

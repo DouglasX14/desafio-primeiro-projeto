@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fundamentos - align content</title>
+    <style type="text/css">
+      .container {
+        border: 1px solid black;
+        height: 400px;
+        max-width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .item {
+        background-color: orangered;
+        padding: 0 5px;
+        flex: 1;
+        text-align: center;
+        color: white;
+        margin: 5px;
+      }
+
+      .stretch {
+        align-content: stretch;
+      }
+
+      .center {
+        align-content: center;
+      }
+
+      .flex-start {
+        align-content: flex-start;
+      }
+
+      .flex-end {
+        align-content: flex-end;
+      }
+
+      .space-around {
+        align-content: space-around;
+      }
+
+      .space-between {
+        align-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <p>stretch</p>
+    <div class="container stretch">
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal, venha aos olhos
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal, venha aos
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal, venha aos olhos
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal, venha aos olhos
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal, venha aos olhos
+      </div>
+    </div>
+
+    <p>center</p>
+    <div class="container center">
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal, venha aos olhos
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal, venha aos
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal, venha aos olhos
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal, venha aos olhos
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal, venha aos olhos
+      </div>
+    </div>
+
+    <p>flex-start</p>
+    <div class="container flex-start">
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal, venha aos olhos
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal, venha aos
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal, venha aos olhos
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal, venha aos olhos
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal, venha aos olhos
+      </div>
+    </div>
+
+    <p>flex-end</p>
+    <div class="container flex-end">
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal, venha aos olhos
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal, venha aos
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal, venha aos olhos
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal, venha aos olhos
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal, venha aos olhos
+      </div>
+    </div>
+
+    <p>space-around</p>
+    <div class="container space-around">
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal, venha aos olhos
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal, venha aos
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal, venha aos olhos
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal, venha aos olhos
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal, venha aos olhos
+      </div>
+    </div>
+
+    <p>space-between</p>
+    <div class="container space-between">
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal, venha aos olhos
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal, venha aos
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal, venha aos olhos
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal, venha aos olhos
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal
+      </div>
+      <div class="item">
+        Como explicar que a lágrima, mero colírio de água e sal, venha aos olhos
+      </div>
+    </div>
+  </body>
+</html>
